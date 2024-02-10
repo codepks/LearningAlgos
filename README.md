@@ -6,7 +6,9 @@ We solve the problems by dividing the problem into sub-problems. There are two w
 1. **Memoization** : Top down approach. We cache the results of the expensive calculations. You start solving the problem from the top and recursively store the results.
 2. **Tabulation** : It is bottom up approach. We fill up table with solutions of subproblems and use it to solve larger problems.
 
-## Fibonacchi using Memoization
+## Fibonacchi Problem
+
+### Fibonacchi using Memoization
 ```
 int fibMemoization(int n, std::vector<int>& memo) {
     if (n <= 1) return n;
@@ -21,7 +23,7 @@ int fibonacci(int n) {
 }
 ```
 
-## Fibonacchi using DP
+### Fibonacchi using DP
 
 ```
 int fibMemoization(int n, std::vector<int>& memo) {
