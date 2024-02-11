@@ -54,6 +54,10 @@ We need to understand the recursion method first.
 
 **Explantion**
 
-> For example : profit[] = {60,100,120}, weight[] = {10,20,30}, W = 50
-> 
+> For example : profit[] = {60, 100, 120}, weight[] = {10, 20, 30}, W = 50
+> First you need to sort the weight array
+> 1. Keep the value of the last element in the array = val[n-1]
+> 2. Call the function with the remove element weight on the rest of the earlier array = knapSack(W - wt[n - 1], wt, val, n - 1)
+> 3. Apply recursion on the array without the last element to see if you can still get better results without the last element
+> 4. Check max of ( 1 + 2 ) and (3)
 
