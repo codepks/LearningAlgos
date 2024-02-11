@@ -38,3 +38,18 @@ int fibonacci(int n) {
     return fibMemoization(n, memo);
 }
 ```
+
+
+## Knapsack 0/1
+
+```
+max( val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1), knapSack(W, wt, val, n - 1)); 
+```
+
+We need to understand the recursion method first.
+
+**Explantion**
+
+> For example : profit[] = {60,100,120}, weight[] = {10,20,30}, W = 50
+> 
+
