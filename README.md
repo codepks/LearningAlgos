@@ -42,6 +42,10 @@ int fibonacci(int n) {
 
 ## Knapsack 0/1
 
+>Given N items where each item has some weight and profit associated with it and also given a bag with capacity W,
+>(i.e., the bag can hold at most W weight in it).
+>The task is to put the items into the bag such that the sum of profits associated with them is the maximum possible. 
+
 ```
 max( val[n - 1] + knapSack(W - wt[n - 1], wt, val, n - 1), knapSack(W, wt, val, n - 1)); 
 ```
